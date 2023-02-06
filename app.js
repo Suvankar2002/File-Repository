@@ -97,11 +97,11 @@ app.get('/viewFile:id',(req,res)=>{
             fs.readFile(`${__dirname}/userData/${userName}/${repoName}/${fileName}`, (err, data) => {
                 if (err) {
                   console.log(err);
-                }  
+                }
                 const content = data.toString();
                 res.render('viewText',{repoName,fileName,userName,content,title:'Text'});
-              }); 
-        }    
+              });
+        }
     }
 });
 
@@ -189,7 +189,7 @@ app.post('/login',(req,res)=>{
             {
                 currentlogins[req.socket.remoteAddress] = userName;
                 res.redirect('/dashboard');
-            }    
+            }
             else
                 res.render('login',{title : 'Log in', invalid : true, userName});
         });
