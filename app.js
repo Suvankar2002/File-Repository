@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const port = 5000;
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const multer = require('multer');
@@ -209,4 +208,4 @@ app.use((req,res)=>{
     console.log(req.method);
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(process.env.PORT, () => console.log(`Example app listening on port ${process.env.PORT}!`));
