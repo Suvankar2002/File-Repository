@@ -1,0 +1,43 @@
+
+.formClass {
+    margin: 5%;
+}
+
+
+.alertText {
+    color: #f50707;
+    size: 5rem;
+}
+
+table{
+    width: 100%;
+}
+
+
+img{
+    width: 30%;
+    height: 10%;
+}
+
+iframe{
+    width: 30%;
+    height: 10%;
+}
+
+h6{
+    width: 30%;
+    height: 10%;
+}
+
+td{
+    width: 30%;
+    height: 10%;
+}
+
+/* p{
+    text-align: center;
+} */
+body
+{
+    justify-content: center;
+}
